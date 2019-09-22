@@ -1,0 +1,437 @@
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-09-21 15:27:09
+ * @version $Id$
+ */
+ #fp-nav ul li a span { /*  提高层叠性 */
+	background: #f40!important;
+}
+/* 直接进入 */
+.go{
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	z-index: 999;
+}
+/* 继续向下 */
+.next{
+	position: fixed;
+	bottom: 100px;
+	right: 5%;
+	z-index: 999;
+}
+.next-updown{
+	animation: next 0.7s linear infinite;
+}
+@keyframes next{
+	50%{
+		bottom: 80px;
+	}
+	100%{
+		bottom: 100px;
+	}
+}
+/*第一屏制作 start*/
+.section1{
+	background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;  
+}
+.fly{
+	position: absolute;
+	top: 5%;
+	right: 20%;
+}
+.shirt01{
+	position: absolute;
+	bottom: 350px;
+	left: 35%;
+}
+.goods{
+	position: absolute;
+	bottom: 150px;
+	left: 21%;
+}
+/*第一屏制作 end*/
+/*第二屏制作 start*/
+.section2{
+	background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+    z-index: 2;
+}
+.computer{
+	width: 1000px;
+	height: 500px;
+	/*background: rgba(0,0,0,0.3);*/
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	/*margin-left: -500px;*/  /*移动盒子宽度的一半，让盒子水平居中*/
+	transform: translateX(-50%); /*两者效果是一样的*/
+}
+.search{
+	width: 222px;
+	height: 45px;
+	background: url(../images/search.png);
+	position: absolute;
+	bottom: 310px;
+	right: -24px;
+	display: none;
+}
+.search-words{
+	position: absolute;
+	top: 5px;
+	right: 35px;
+	opacity: 0;
+}
+.search-02-1{
+	position: absolute;
+	bottom: 310px;
+	right: 380px;
+	display: none;
+}
+.goods-02{
+	height: 100px;
+	position: absolute;
+	bottom: 217px;
+	right: 270px;
+	display: none;
+}
+.words-01,.words-02 {
+	position: absolute;
+	left: 50%;
+	bottom: 550px;
+	transform: translateX(-50%);
+}
+.words-02 {
+	opacity: 0;
+}
+/*沙发*/
+.shirt-02{
+	position: absolute;
+	bottom: 347px;
+	left: 402px;
+	width: 100px;
+	display: none;
+	z-index: 10;
+}
+.cover{
+	position: absolute;
+	bottom: 334px;
+    right: 496px;
+    width: 101px;
+    height: 90px;
+    background-color: #fff;
+    display: none; 
+}
+/*第二屏制作 end*/
+/*第三屏制作 start*/
+.section3{
+	background: #ef674d;
+	z-index: 1;
+}
+.main{
+	width: 750px;
+	height: 500px;
+	background: url(../images/main.png) no-repeat center center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+}
+.img,.img-01-a{
+	position: absolute;
+	left: 418px;
+	bottom: 100px;
+}
+.img-01-a{
+	opacity: 0;
+}
+.btn,.btn-01-a{
+	position: absolute;
+	left: 418px;
+	bottom: 30px;
+}
+.btn-01-a{
+	opacity: 0;
+}
+/*沙发*/
+.shirt-03,.t1f{
+	position: absolute;
+	left: 135px;
+	bottom: 200px;
+	display: none;
+}
+/*第三屏制作 end*/
+/*第四屏制作 start*/
+.section4 {
+	background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+    overflow: hidden;
+}
+.cloud{
+	position: absolute;
+	left: 50%;
+	bottom: 550px;
+}
+.word {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 500px;
+}
+.words-04-a {
+	opacity: 0;
+}
+.car{
+	width: 500px;
+	/*background: #ccc;*/
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+	z-index: 50;
+}
+.car-img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 200px;
+	z-index: -1;
+	display: none;
+}
+.note{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 200px;
+	display: none;
+}
+.note-img{
+	position: absolute;
+	left: 60px;
+	top: 60px;
+	opacity: 0;
+}
+/*第四屏制作 end*/
+/*第五屏的制作  start*/
+.section5 {
+	background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+	z-index: -1;
+}
+.words-05 {
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	opacity: 0;
+}
+
+.words-05-a{
+	animation: words5 3s forwards;
+}
+@keyframes words5{
+	100%{
+		opacity: 1;
+		transform: translateZ(100px) rotateY(360deg);
+	}
+}
+
+.card-05 {
+	position: absolute;
+	left: 20%;
+	bottom: 200px;
+	z-index: 10;
+}
+.order-05 {
+	position: absolute;
+	left: 27%;
+	bottom: 270px;
+}
+.t1f-05 {
+	position: absolute;
+	bottom: 800px;
+	left: 25%;
+	display: none;
+}
+.mouse {
+	position: absolute;
+	right: 20%;
+	bottom: 200px;
+}
+.mouse-05-a {
+	opacity: 0;
+}
+.hand-05 {
+	position: absolute;
+	right: 24%;
+	bottom: -375px;
+}
+.overFlow{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+}
+/*第五屏的制作  end*/
+/*第六屏的制作  start*/
+.section6 {
+	background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+	z-index: -2;
+}
+.box-06 {
+	position: absolute;
+	left:123px;
+	bottom: 500px;
+	z-index: 99;
+}
+.car-06 {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	z-index: 1000;
+}
+.cloud-06 {
+	position: absolute;
+	left: 50%;
+	bottom: 550px;
+	animation: cloud6 30s;
+}
+@keyframes cloud6 {
+	50% {
+		left: 10%;
+	}
+}
+
+.pop-06 {
+	position: absolute;
+	bottom: 119px;
+	right: 48%;
+	display: none;
+	z-index: 50;
+}
+.boy {
+	right: 50%;
+	bottom: 0;
+	position: absolute;
+	height: 100px;
+}
+.girl {
+	position: absolute;
+	right: 315px;
+	bottom: 116px;
+	height: 123px;
+	display: none;
+	z-index: 50;
+}
+.door{
+	position: absolute;
+	right: 285px;
+	bottom: 116px;
+	opacity: 0;
+}
+.pop-07 {
+	position: absolute;
+	right:445px;
+	bottom: 400px;
+	z-index: 40;
+	display: none;
+}
+.words-06-a {
+	position: absolute;
+	left: 10%;
+	bottom: 479px;
+	display: none;
+}
+
+/*第六屏的制作  end*/
+/*第七屏的制作  start*/
+.section7 {
+	background: #8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.star {
+	position: absolute;
+    left: 50%;
+    bottom: 439px;
+    margin-left: -295px;
+    width: 0;
+    height: 20px;
+    background: url(../images/star.png) no-repeat;
+    background-size: 97px;
+}
+.good-07 {
+	position: absolute;
+	bottom: 382px;
+    left: 50%;
+    margin-left: -289px;
+    display: none;
+
+}
+/*第七屏的制作  end*/
+/*第八屏的制作  start*/
+.section8 {
+	background: url(../images/ksgw.png);
+}
+.beginShoping {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom:365px;
+}
+.btn-08-a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.again {
+	position: absolute;
+	bottom: 403px;
+	left: 50%;
+	margin-left: 240px;
+	cursor: pointer;
+}
+.hand-08 {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/*第八屏的制作  end*/
+/*动画制作*/
+.updown{
+	animation: fly 3s linear infinite;
+}
+@keyframes fly{
+	50%{
+		top: 15%;
+	}
+	100%{
+		top: 5%;
+	}
+}
+.shirt-updown{
+	animation: shirt 2s linear infinite;
+}
+@keyframes shirt{
+	50%{
+		bottom: 335px;
+	}
+	100%{
+		bottom: 350px;
+	}
+}
+/*云彩动画制作*/
+.cloud-back1{
+	animation: cloud 60s linear infinite;
+}
+@keyframes cloud{
+	50%{
+		left: -10%;
+	}
+	100%{
+		left: 50%;
+	}
+}
+
+
